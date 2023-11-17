@@ -43,7 +43,7 @@ public class InvokeController {
      */
     @GetMapping("/getPoisonousChickenSoup")
     public PoisonousChickenSoupResponse getPoisonousChickenSoup() {
-        ApiClient apiClient = new ApiClient("7052a8594339a519e0ba5eb04a267a60", "d8d6df60ab209385a09ac796f1dfe3e1");
+        ApiClient apiClient = new ApiClient("75e642bbef18faf80966b8f657e763bc", "0be1404ce26779d00cbb333a04267ade");
         PoisonousChickenSoupResponse poisonousChickenSoup = null;
         try {
 
@@ -121,7 +121,7 @@ public class InvokeController {
     public LoveResponse getLoveTalkSetKey() {
         LoveResponse loveResponse;
         try {
-            ApiClient apiClient = new ApiClient("7052a8594339a519e0ba5eb04a267a60", "d8d6df60ab209385a09ac796f1dfe3e1");
+            ApiClient apiClient = new ApiClient("b73e61ed6e6300f1c069ee354e9e98e6", "5e8d7f6090e8eebc3dbe089737fbaf28");
             loveResponse = apiService.randomLoveTalk(apiClient);
         } catch (ApiException e) {
             throw new BusinessException(e.getCode(), e.getMessage());
